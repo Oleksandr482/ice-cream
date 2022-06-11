@@ -1,3 +1,7 @@
+h2, h3, p {
+    margin: 0%;
+}
+
 .is-hidden-title {
     position: absolute;
     width: 1px;
@@ -33,17 +37,73 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
+    margin-bottom: 15px;
+
     @media screen and (min-width: 768px) {
         font-size: 48px;
         text-transform: none;
+        margin-bottom: 13px;
     }
 
     @media screen and (min-width: 1200px) {
         font-size: 58px;
+        margin-bottom: 16px;
     }
 
     color: #D41443;
 }
+    &__item::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 16px;
+       
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        transform: translateY(0);
+        transition: transform 250ms linear;
+       
+        @media screen and (min-width: 768px) {
+            margin-bottom: 36px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 40px;
+        }
+}
+
+    &__item:first-child::before {
+        background-image: url(../images/advantages-icon1-1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/advantages-icon1-2x.png);
+            }
+    }
+
+    &__item:nth-child(2)::before {
+        background-image: url(../images/advantages-icon2-1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/advantages-icon2-2x.png);
+            }
+    }
+
+    &__item:last-child::before {
+        background-image: url(../images/advantages-icon3-1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/advantages-icon3-2x.png);
+            }
+    }
+
     &__list {
         display: block;
 
@@ -59,9 +119,19 @@
     }
 
     &__item {
+        margin-bottom: 32px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
         @media screen and (min-width: 1200px) {
             width: 288px;
-        }
+
+            &:hover::before,
+            &:focus::before {
+                transform: translateY(40px);
+       } 
+    }
     }
 
 }
