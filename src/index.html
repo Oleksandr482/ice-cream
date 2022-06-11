@@ -8,7 +8,52 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <section class="products">
+      <div class="conteiner">
+          <p class="products__slogan">100% natural</p>
+          <h2 class="products__title">products</h2>
+          <ul class="products__list">
+              <li class="products__item">                  
+                  <div class="products__card">
+                      <h3 class="products__name">ice cream</h3>
+                      <p class="products__text">Very tasty ice cream in a crispy waffle cone. What could be better? We offer incredible desserts with fruit jams, thick sauces and sweet icing.</p>
+                      <button class="products__btn" type="button"><svg class="products__icon">
+                          <use href="./"></use>
+                      </svg></button>                                              
+                  </div>                   
+              </li>
+              <li class="products__item products__item--icecoffee">
+                  <div class="products__card products__card--icecoffee">
+                      <h3 class="products__name">ice coffee</h3>
+                      <p class="products__text">The fact that delicious coffee must be hot is a stereotype. If you've ever tasted real frappe coffee or fredo cappuccino, you know how delicious it is!</p>
+                      <button class="products__btn" type="button"><svg class="products__icon">
+                          <use href="./"></use>
+                      </svg></button>
+                  </div>
+              </li>
+              <li class="products__item products__item--milkshakec">
+                  <div class="products__card products__card--milkshakec">
+                      <h3 class="products__name">milkshakes</h3>
+                      <p class="products__text">Milkshake is not only a refreshing drink in the summer, but also a great opportunity to replicate the strings and recharge iur batteris.</p>
+                      <button class="products__btn" type="button"><svg class="products__icon">
+                          <use href="./"></use>
+                      </svg></button>
+                  </div>
+              </li>
+          </ul>
+      </div>
+      <!-- <div class="products__wrap">                               
+          <picture>
+              <source srcset="./ 1x, ./ 2x" media="(min-width: 1200px)" />
+              <source srcset="./ 1x, ./ 2x" media="(min-width: 768px)" />
+              <source srcset="./ 1x, ./ 2x" media="(min-width: 320px)" />                                                             
+              <img class="card-list__img" src="./images/foto-portf-1.jpg" alt="Фото технокряк"/>
+          </picture>
+          <div class="products__card">
+              <p class="card-list__card-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+          </div>
+      </div> -->
+  </section>
     <include src="./partials/example.html"></include>
   </body>
 </html>
