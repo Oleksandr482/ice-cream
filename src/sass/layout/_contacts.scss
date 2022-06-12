@@ -1,0 +1,313 @@
+.contacts {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: #fff5f6;
+  padding-bottom: 48px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 120px;
+    font-size: 16px;
+  }
+
+  &__card-set {
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__card {
+    max-width: 280px;
+    max-height: 412px;
+    padding: 40px 32px;
+    border-radius: 24px;
+    border: 1px solid rgba(225, 225, 225, 1);
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      min-width: 224px;
+      min-height: 528px;
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      min-width: 395px;
+      min-height: 538px;
+    }
+  }
+
+  &__card-inside {
+    @media screen and (max-width: 767px) {
+      min-height: 448px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      min-height: 458px;
+    }
+  }
+
+  &__place {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(225, 225, 225, 1);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  &__category {
+    height: 16px;
+    max-width: 130px;
+    background-color: rgba(194, 226, 151, 1);
+    border-radius: 4px;
+    line-height: 22;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    margin-bottom: 19px;
+
+    @media screen and (min-width: 768px) {
+      height: 28px;
+      max-width: 138px;
+      border-radius: 6px;
+      font-size: 16px;
+      line-height: 1.9;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__city {
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 12px;
+      line-height: 1.86;
+    }
+
+    @media screen and (min-width: 1280px) {
+      line-height: 1.88;
+    }
+  }
+
+  &__description {
+    max-width: 179px;
+    line-height: 1.5;
+    color: #907e82;
+
+    @media screen and (min-width: 768px) {
+      max-width: 159px;
+      max-height: 65px;
+      line-height: 1.64;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 250px;
+      max-height: 50px;
+      line-height: 1.81;
+    }
+  }
+
+  .contacts__schedule {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(225, 225, 225, 1);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  .contacts__days {
+    line-height: 1.83;
+    margin-bottom: 0;
+    color: #000000;
+
+    @media screen and (min-width: 768px) {
+      line-height: 1.86;
+    }
+
+    @media screen and (min-width: 1280px) {
+      line-height: 1.88;
+    }
+  }
+
+  .contacts__time {
+    line-height: 1.83;
+    color: #ffa5ba;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 768px) {
+      line-height: 1.86;
+      height: 23px;
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      line-height: 1.88;
+      height: 30px;
+    }
+  }
+
+  .contacts__connection {
+    margin-bottom: 0;
+
+    @media screen and (min-width: 768px) {
+      height: 48px;
+    }
+  }
+
+  .contacts__tel-mail {
+    display: block;
+    line-height: 1.5;
+    color: #907e82;
+
+    @media screen and (min-width: 768px) {
+      line-height: 1.86;
+      height: 24px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      line-height: 1.81;
+      height: 25px;
+    }
+  }
+
+  .contacts__btn {
+    align-items: center;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 0;
+    }
+
+    &-locations {
+      display: block;
+      margin: 0 auto 10px auto;
+      width: 161px;
+      height: 44px;
+      border-radius: 22px;
+      background-color: #d41342;
+      border: none;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+
+      @media screen and (min-width: 768px) {
+        width: 191px;
+        margin: 0 15px 0 0;
+      }
+
+      @media screen and (min-width: 1280px) {
+        width: 198px;
+      }
+    }
+
+    &-franchise {
+      display: block;
+      margin: 0 auto;
+      width: 161px;
+      height: 44px;
+      border-radius: 24px;
+      background-color: #ffffff;
+      border: none;
+      color: #d41443;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+
+      &:hover,
+      &:focus {
+        background-color: #ecebeb;
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 174px;
+        margin: 0;
+      }
+
+      @media screen and (min-width: 1280px) {
+        width: 180px;
+      }
+    }
+  }
+}
+
+.category__cafe {
+  width: 80px;
+  background-color: rgba(240, 209, 165, 1);
+
+  @media screen and (min-width: 768px) {
+    width: 73px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 75px;
+  }
+}
+
+.contacts__btn-icon {
+  margin-left: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .contacts__btn-locations > & {
+    fill: #ffffff;
+  }
+
+  .contacts__btn-franchise > & {
+    fill: #d41443;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 13px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 14px;
+  }
+}
