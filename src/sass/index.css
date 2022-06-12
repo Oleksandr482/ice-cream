@@ -350,12 +350,6 @@ img {
   margin-left: 8px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts__btn-locations > .contacts__btn-icon {
-  fill: #ffffff;
-}
-.contacts__btn-franchise > .contacts__btn-icon {
-  fill: #d41443;
-}
 @media screen and (min-width: 768px) {
   .contacts__btn-icon {
     margin-left: 13px;
