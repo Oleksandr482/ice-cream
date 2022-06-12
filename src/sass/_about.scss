@@ -1,7 +1,19 @@
 .about {
+    width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #FFF5F6; 
+    @media screen and (min-width: 768px) {
+        padding-top: 20px;
+        padding-bottom: 80px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.overlay{
     background-image: url(../images/about/about-bg-mob-1x.png);
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -9,16 +21,13 @@
         background-image: url(../images/about/about-bg-mob-2x.png);
     }
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: 50% 73%;
+    background-size: contain;
     @media screen and (min-width: 768px) {
-        padding-top: 20px;
-        padding-bottom: 80px;
         background-image: none;
     }
     @media screen and (min-width: 1280px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        background-position: bottom;
         background-image: url(../images/about/about-bg-desk-1x.png);
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
@@ -35,7 +44,9 @@
 .about-wrap{
    @media screen and (min-width: 768px) {
         display: flex;
+        align-items: unset;
     }
+    align-items: center;
 }
 
 .picture-wrap{
@@ -81,6 +92,7 @@
     @media screen and (min-width: 768px) {
        font-size: 48px;
        line-height: 0.87;
+       margin-bottom: 40px;
     }
     @media screen and (min-width: 1280px) {
         font-size: 58px;
@@ -90,13 +102,12 @@
 }
 
 .about__descr {
-    width: 220px;
+    max-width: 220px;
     @media screen and (min-width: 768px) {
        max-width: 334px;
     }
     @media screen and (min-width: 1280px) {
-        padding-top: 72px;
-        padding-bottom: 99px;
+        
         max-width: 463px;
     }
 }
@@ -110,6 +121,7 @@
     @media screen and (min-width: 768px) {
        font-size: 14px;
        line-height: 1.79;
+       margin-bottom: 32px;
     }
     @media screen and (min-width: 1280px) {
         font-size: 16px;
@@ -126,8 +138,12 @@
     @media screen and (min-width: 768px) {
        font-size: 14px;
        line-height: 1.79;
+       margin-bottom: 40px;
     }
-
+    @media screen and (min-width: 1280px) {
+       font-size: 14px;
+       line-height: 1.79;
+    }
 }
 
 .about__btn{
