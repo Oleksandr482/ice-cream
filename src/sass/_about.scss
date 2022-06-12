@@ -1,19 +1,30 @@
 .about {
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #FFF5F6;
-    
-    @media screen and (min-width: 768px) {
-        background-image: none;
-    }  
-    
+    background-color: #FFF5F6; 
+    background-image: url(../images/about/about-bg-mob-1x.png);
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/about/about-bg-mob-2x.png);
+    }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     @media screen and (min-width: 768px) {
         padding-top: 20px;
         padding-bottom: 80px;
+        background-image: none;
     }
     @media screen and (min-width: 1280px) {
         padding-top: 60px;
         padding-bottom: 60px;
+        background-image: url(../images/about/about-bg-desk-1x.png);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+        background-image: url(../images/about/about-bg-desk-2x.png);
+        }
     }
 }
 
