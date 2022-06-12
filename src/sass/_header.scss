@@ -37,8 +37,8 @@
         left: 117px;
     }
     &__passion {
-            font-size: 37px;
-            line-height: 1.13;
+            font-size: 48px;
+            line-height: 0.96;
             color: #D41443;
     }
     &-button{
@@ -103,4 +103,39 @@
     background-color: transparent;
     cursor: pointer;
     fill: #D41443;
+}
+.mob-menu {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #E17992;
+    width: 100vw;
+    height: 100vh;
+    &-list__item{
+        font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+    .buy{
+        width: 209px;
+        height: 44px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
+        text-align: center;
+        background-color: #FFFFFF;
+        border-radius: 22px;
+        color: #D41443;
+        border: none;
+        margin-top: 60px;
+    }
+    .header__icon-buy {
+        margin-left: 18px;
+        fill: #D41443;
+    }
 }
