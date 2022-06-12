@@ -1,0 +1,141 @@
+.header {
+    background-color: #FFB8CA;
+    padding-top: 6;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 502px;
+    overflow: hidden;
+    & .container {
+    position: relative; 
+    }
+    &-logo {
+        margin-bottom: 136px;
+    }
+    &__title{
+        font-family: 'Titan One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 1.15;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            max-width: 200px;
+            color: #FFFFFF;
+            margin-bottom: 19px;
+            text-decoration: none;
+    }
+    
+    &__title-thumb {
+        margin-top: 137px;
+        position: relative;
+        max-width: 220px;
+        z-index: 1;
+    }
+    &__icecream {
+        position: absolute;
+        top: 92px;
+        left: 117px;
+    }
+    &__passion {
+            font-size: 48px;
+            line-height: 0.96;
+            color: #D41443;
+    }
+    &-button{
+        margin-bottom: 158px;
+    }
+    &-button__btn-red{
+        width: 62px;
+        height: 24px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 1.25;
+        text-align: center;
+        background-color: #D41443;
+        border-radius: 20px;
+        color: #FFFFFF;
+        border: none;
+        }
+        &-button__btn-red:hover , &-button__btn-red:focus {
+            background-color:  #C7133E;
+        }
+    &-button__btn-white {
+            width: 83px;
+            height: 24px;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 1.25;
+            text-align: center;
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            color: #D41443;
+            border: none;
+        }
+        &-button__btn-white:hover , &-button__btn-white:focus {
+            background-color: #ECEBEB;;
+        }
+.elipse {
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 83px;
+        left: 32px;
+        width: 346px;
+        height: 344px;
+        border-radius: 50%;
+        background-color: #FFA5BA;
+    }
+}
+}
+
+.menu-open-btn {
+    position: absolute;
+    top: 6px;
+    right: 0px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    fill: #D41443;
+}
+.mob-menu {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #E17992;
+    width: 100vw;
+    height: 100vh;
+    &-list__item{
+        font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+    .buy{
+        width: 209px;
+        height: 44px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
+        text-align: center;
+        background-color: #FFFFFF;
+        border-radius: 22px;
+        color: #D41443;
+        border: none;
+        margin-top: 60px;
+    }
+    .header__icon-buy {
+        margin-left: 18px;
+        fill: #D41443;
+    }
+}
