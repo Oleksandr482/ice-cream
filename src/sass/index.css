@@ -827,13 +827,6 @@ img {
   position: absolute;
   right: 38px;
 }
-
-.list {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-}
-
 .is-hidden-title {
   position: absolute;
   width: 1px;
