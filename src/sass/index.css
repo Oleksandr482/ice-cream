@@ -44,11 +44,6 @@ img {
 .link {
   text-decoration: none;
 }
-
-.list {
-  list-style: none;
-}
-
 .container {
   padding: 0 20px;
   margin: 0 auto;
@@ -1045,12 +1040,6 @@ img {
 .about__btn-vector {
   position: absolute;
   right: 38px;
-}
-
-.list {
-  margin: 0;
-  list-style: none;
-  padding: 0;
 }
 
 .header {
