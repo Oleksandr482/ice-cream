@@ -165,6 +165,10 @@
     }
     
     //fff//
+    &__content {
+        position: relative;
+    }
+    
     &__content::after {
         content: '';
         position: absolute;
