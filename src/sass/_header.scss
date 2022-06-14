@@ -24,7 +24,7 @@
         padding: 0;
     }
     @media screen and (min-width: 1200px) {
-        width: 1200px;
+        width: 1280px;
     }
     }
     &__logo {
@@ -65,12 +65,6 @@
     &__title-thumb {
         position: relative;
         z-index: 1;
-        @media screen and (min-width: 768px){
-            margin-right: 184px;
-        }
-        @media screen and (min-width: 1200px){
-            margin-right: 87px;
-        }
     }
         &__passion {
             font-size: 48px;
@@ -195,7 +189,6 @@
     color: rgba(255, 255, 255, 1);
     // margin-left: 184px;
     width: 114px;
-    position: relative;
     margin-left: 150px;
     }
     @media screen and (min-width: 1200px) {
@@ -212,7 +205,7 @@ display: list-item;
 list-style: none;
 text-align: end;
 }
-&-text{
+&-text{ position: relative;
         font-size: 8px;
         font-weight: 400;
         line-height: 10px;
@@ -222,6 +215,7 @@ text-align: end;
         @media screen and (min-width: 1200px){
     font-size: 14px;
     line-height: 1.29;
+            
     }
     &:not(:last-child){
         margin-bottom: 17px;
@@ -229,22 +223,44 @@ text-align: end;
 
 }
 }
-&__item{
+&__number{
+position: relative;
 font-family: titan one;
 font-size: 28px;
 font-weight: 400;
 line-height: 32px;
 letter-spacing: 0.04em;
+z-index: 1;
 color: rgba(212, 20, 67, 1);
+margin: 0;
+&::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: -1px;
+        right: -5px;
+        z-index: -1;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+    
+        @media screen and (min-width: 1200px){
+            width: 30px;
+            height: 30px;
+            top:-5px;
+            bottom: -10px;
+        }
+    }
 @media screen and (min-width: 1200px){
     font-size: 46px;
     line-height: 1.15;
 }
 }
 &__btn-numbers{
-    margin-left: 159px;
+    margin-left: 279px;
     @media screen and (min-width: 1200px){
-    margin-left: 104px;
+    margin-left: 120px;
     }
 }
 .menu-open-btn {
@@ -295,9 +311,10 @@ color: rgba(212, 20, 67, 1);
         font-size: 14px;
         line-height: 18px;
         color: #FFFFFF;
-        border: 1px solid #E18298;
+        border-top: 1px solid #E18298;
+        border-bottom: 1px solid #E18298;
         &:not(:last-child){
-            margin-bottom: 22px;
+            padding-bottom: 22px;
         }
     }
 }
@@ -367,27 +384,22 @@ color: rgba(212, 20, 67, 1);
     display: block;
     position: absolute;
     right: 48px;
-    bottom: -115px;
+    bottom: -52px;
     }
     @media screen and (min-width: 1200px) {
-        bottom: -194px;
+        bottom: -90px;
         right: 25px;
     }
 }
-.small-ellipse {
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        background-color: #FFFFFF;
-    }
+
+.eli {
+    position: relative;
+    z-index: 1;
 }
 .menu {
     z-index: 1;
     display: none;
+    height: 100px;
     @media screen and (min-width: 1200px) { 
         display: block;   
         margin-top: 12px;
