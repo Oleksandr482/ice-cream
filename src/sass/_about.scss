@@ -1,0 +1,186 @@
+img {
+    display: block;
+    width: 100%; 
+    height: auto;
+}
+
+.about {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #FFF5F6; 
+    @media screen and (min-width: 768px) {
+        padding-top: 20px;
+        padding-bottom: 80px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.overlay{
+    max-width: 480px;
+    background-image: url(../images/about/about-bg-mob-1x.png);
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/about/about-bg-mob-2x.png);
+    }
+    background-repeat: no-repeat;
+    background-position: 50% 73%;
+    background-size: contain;
+
+    @media screen and (min-width: 768px) {
+        background-image: none;
+        max-width: 100%;
+    }
+    @media screen and (min-width: 1200px) {
+        background-position: bottom;
+        background-image: url(../images/about/about-bg-desk-1x.png);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+        background-image: url(../images/about/about-bg-desk-2x.png);
+        }
+    }
+}
+
+.about__title-wrap{
+    text-align: center; 
+}
+
+.about-wrap{
+   @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: unset;
+    }
+    align-items: center;
+}
+
+.picture-wrap{
+    @media screen and (min-width: 768px) {
+        width: 336px;
+        margin-right: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 501px;
+        margin-right: 139px;
+    }
+}
+
+.about__lable {
+    margin-bottom: 15px;
+    font-family: Titan One;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFA5BA;
+    @media screen and (min-width: 768px) {
+       margin-bottom: 16px;
+       font-size: 26px;
+       line-height: 1.15;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: 1.13;
+    }
+}
+
+.about__title {
+    margin-bottom: 32px;
+    margin-right: auto;
+    margin-left: auto; 
+    font-family: Titan One;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443;
+    @media screen and (min-width: 768px) {
+       font-size: 48px;
+       line-height: 0.87;
+       margin-bottom: 40px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+        line-height: 1.14;
+        margin-bottom: 79px;
+    }
+}
+
+.about__descr {
+    margin-right: 80px;
+    @media screen and (min-width: 768px) {
+       max-width: 334px;
+       margin-right: 0;
+    }
+    @media screen and (min-width: 1200px) {   
+        max-width: 463px;
+    }
+}
+
+.about__top-text {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #000000;
+    @media screen and (min-width: 768px) {
+       font-size: 14px;
+       line-height: 1.79;
+       margin-bottom: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+}
+
+.about__botom-text {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #907E82;
+    @media screen and (min-width: 768px) {
+       font-size: 14px;
+       line-height: 1.79;
+       margin-bottom: 40px;
+    }
+    @media screen and (min-width: 1200px) {
+       font-size: 14px;
+       line-height: 1.79;
+    }
+}
+
+.about__btn{
+    position: relative;
+    padding: 11px 37px;
+    min-width: 176px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: #D41443;
+    background: #FFFFFF;
+    border-radius: 22px;
+    border-color: transparent;
+    &:hover,
+    &:focus {
+        background: #ECEBEB;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.31;
+    }
+}
+
+.about__btn-vector{
+    position: absolute;
+    right: 38px;
+}
