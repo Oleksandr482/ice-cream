@@ -1460,7 +1460,7 @@ img {
     padding: 80px 14px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .advantages {
     font-size: 16px;
     line-height: 1.76;
@@ -1545,7 +1545,7 @@ img {
     width: 527px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .advantages__list {
     width: 1141px;
     justify-content: space-between;
@@ -1559,7 +1559,7 @@ img {
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .advantages__item {
     width: 288px;
   }
