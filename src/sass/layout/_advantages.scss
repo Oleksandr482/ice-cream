@@ -129,6 +129,7 @@ h2, h3, p {
         }
         @media screen and (min-width: 1200px) {
             width: 288px;
+            margin-right: 0;
 
             &:hover::before,
             &:focus::before {
