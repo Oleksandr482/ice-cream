@@ -1,1 +1,0 @@
-{"mappings":"AAAAA,GAAE,WACAA,EAAE,mBAAmBC,MAAM,CACzBC,QAAQ,EACRC,MAAM","sources":["src/index.js"],"sourcesContent":["$(function () {\n  $('.reviews-slider').slick({\n    arrows: false,\n    dots: true,\n  });\n});\n"],"names":["$","slick","arrows","dots"],"version":3,"file":"index.9494dd28.js.map"}
