@@ -1,9 +1,17 @@
 @import './common';
 @import './base/reset';
 @import './utils/container';
+@import './utils/list';
 @import './components/visually-hidden';
 @import './layout/contacts';
 @import './header';
+<<<<<<< Updated upstream
 @import './about';
 @import './utils/list';
 @import './layout/advantages';
+=======
+@import './utils/hidden';
+@import './about';
+@import './layout/advantages';
+
+>>>>>>> Stashed changes
