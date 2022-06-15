@@ -1485,7 +1485,7 @@ img {
     margin-bottom: 13px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .advantages__title {
     font-size: 58px;
     margin-bottom: 16px;
@@ -1507,7 +1507,7 @@ img {
     margin-bottom: 36px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .advantages__item::before {
     margin-bottom: 40px;
   }
