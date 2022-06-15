@@ -11,7 +11,9 @@ const refs = {
         behavior: 'smooth',
         block: 'start',
       });
-      refs.body.classList.toggle('no-scroll');
-      refs.menu.classList.toggle('visually-hidden');
+      if (window.screen.width <= 768) {
+        refs.body.classList.toggle('no-scroll');
+        refs.menu.classList.toggle('visually-hidden');
+      }
     });
   }
