@@ -355,6 +355,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  @media screen and (max-width: 767.98px) {
+    width: 304px;
+  }
+
   @media screen and (min-width: 768px) {
     width: 450px;
     padding: 40px;
@@ -477,13 +481,17 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  @media screen and (max-width: 767.98px) {
+    width: 304px;
+  }
+
   @media screen and (min-width: 768px) {
-    width: 450px;
+    width: 400px;
     padding: 40px;
   }
 
   @media screen and (min-width: 1280px) {
-    min-width: 900px;
+    min-width: 600px;
     min-height: 389px;
   }
 
@@ -548,8 +556,16 @@
   &__location {
     margin-bottom: 10px;
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 20px;
+    }
+  }
+
+  &__map {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
     }
   }
 
@@ -559,6 +575,15 @@
     @media screen and (min-width: 1280px) {
       display: flex;
     }
+
+    // &:before{
+    //   content: "";
+    //   background-image: url(../images/products/products-pic1-mob-2x.png);
+
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    // }
   }
 
   &__detail {
