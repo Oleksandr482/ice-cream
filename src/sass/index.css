@@ -752,9 +752,13 @@ img {
   border-radius: 20px;
   color: #FFFFFF;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header-button__btn-red:hover, .header-button__btn-red:focus {
   background-color: #C7133E;
+  cursor: pointer;
 }
 .header-button__btn-white {
   width: 83px;
@@ -769,9 +773,13 @@ img {
   border-radius: 20px;
   color: #D41443;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header-button__btn-white:hover, .header-button__btn-white:focus {
   background-color: #ECEBEB;
+  cursor: pointer;
 }
 .header .elipse::before {
   content: "";
@@ -1501,6 +1509,7 @@ img {
   background-repeat: no-repeat;
   transform: translateY(0);
   transition: transform 250ms linear;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .advantages__item::before {
@@ -1514,6 +1523,7 @@ img {
 }
 .advantages__item:first-child::before {
   background-image: url(../images/advantages-icon1-1x.png);
+  cursor: pointer;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .advantages__item:first-child::before {
@@ -1526,14 +1536,17 @@ img {
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .advantages__item:nth-child(2)::before {
     background-image: url(../images/advantages-icon2-2x.png);
+    cursor: pointer;
   }
 }
 .advantages__item:last-child::before {
   background-image: url(../images/advantages-icon3-1x.png);
+  cursor: pointer;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .advantages__item:last-child::before {
     background-image: url(../images/advantages-icon3-2x.png);
+    cursor: pointer;
   }
 }
 .advantages__list {
@@ -1557,14 +1570,17 @@ img {
 @media screen and (min-width: 768px) {
   .advantages__item {
     margin-bottom: 0;
+    cursor: pointer;
   }
 }
 @media screen and (min-width: 1280px) {
   .advantages__item {
     width: 288px;
+    cursor: pointer;
   }
   .advantages__item:hover::before, .advantages__item:focus::before {
     transform: translateY(40px);
+    cursor: pointer;
   }
 }
 

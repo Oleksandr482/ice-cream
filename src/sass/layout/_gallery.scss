@@ -36,6 +36,7 @@
   &__icon {
     @media screen and (max-width: 479.9px) {
       width: 100%;
+      cursor: pointer;
     }
     @media screen and (min-width: 480px) {
       width: 13vw;
