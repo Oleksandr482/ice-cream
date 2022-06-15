@@ -755,10 +755,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .header-button__btn-red:hover, .header-button__btn-red:focus {
   background-color: #C7133E;
-  cursor: pointer;
 }
 .header-button__btn-white {
   width: 83px;
@@ -1117,6 +1117,9 @@ img {
   border-radius: 20px;
   color: #FFFFFF;
   border: none;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .header-button__btn-red:hover, .header-button__btn-red:focus {
@@ -1136,6 +1139,9 @@ img {
   border-radius: 20px;
   color: #D41443;
   border: none;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .header-button__btn-white:hover, .header-button__btn-white:focus {
