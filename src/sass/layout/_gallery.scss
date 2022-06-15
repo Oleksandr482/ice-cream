@@ -1,0 +1,79 @@
+.gallery {
+  @media screen and (max-width: 479.9px) {
+    display: none;
+  }
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -4px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 245, 246, 1) 39%,
+      rgba(255, 255, 255, 1) 39%
+    );
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: -6px;
+  }
+  &__item {
+    @media screen and (min-width: 480px) {
+      display: inline-grid;
+      margin-right: 4px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-right: 6px;
+    }
+    &.top {
+      margin-top: 30px;
+    }
+    &.bottom {
+      margin-bottom: 30px;
+    }
+  }
+  &__icon {
+    @media screen and (max-width: 479.9px) {
+      width: 100%;
+    }
+    @media screen and (min-width: 480px) {
+      width: 13vw;
+      height: 13vw;
+      border-radius: 15px;
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &.big {
+      width: 25vw;
+      height: 25vw;
+    }
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    @media screen and (min-width: 768px) {
+      width: 12vw;
+      height: 12vw;
+      border-radius: 15px;
+    }
+    &.big {
+      width: 24vw;
+      height: 24vw;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 11vw;
+      height: 11vw;
+      border-radius: 22px;
+    }
+    &.big {
+      width: 23vw;
+      height: 23vw;
+    }
+  }
+}
+
+.gallery-mob {
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+}
