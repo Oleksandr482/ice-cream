@@ -8,6 +8,15 @@ p, h1, h2, h3, h4, h5 {
 button {
     cursor: pointer;
 }
+.products {
+padding-top: 80px;
+@media screen and (min-width:768px) {
+    padding-top: 40px;
+}
+@media screen and (min-width:1280px) {
+    padding-top: 60px;
+}
+}
 .products__slogan {
     font-family: 'Titan One';
     font-style: normal;
@@ -17,17 +26,14 @@ button {
     text-align: center;
     text-transform: uppercase;
     color: #FFA5BA;
-    margin-top: 80px;
     @media screen and (min-width:768px) {
         font-size: 26px;
         line-height: 1.15;
-        margin-top: 40px;
     }
     @media screen and (min-width:1280px) {
         font-size: 30px;
         line-height: 1.13;
         letter-spacing: 0.04em;
-        margin-top: 60px;
     }
 }
 .products__title {
@@ -128,6 +134,10 @@ button {
 }
 .products__card {
     position: relative;
+    &:hover::before,
+    &:focus::before {
+        transform: translateY(-75%);
+    } 
     &--milkshakec {
         margin-bottom: 40px;
         @media screen and (min-width:768px) {
@@ -140,6 +150,7 @@ button {
         height: 280px;
         position: absolute;
         transform: translateY(-50%);
+        transition: transform 250ms linear;
         background-image: url(../images/products/products-pic1-mob-1x.png);
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
